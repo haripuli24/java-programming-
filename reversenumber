@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+public class reversenumber
+{
+  public static void main(String args[])
+ {
+  try
+ {
+   int rev=0;
+   Scanner sc = new Scanner(System.in);
+   System.out.println("enter a  number to reverse");
+   int n = sc.nextInt();
+  if(n<0)
+ {
+   System.out.println("enter postive numbers");
+ }
+   while(n!=0)
+ {
+   int reminder = n%10;
+   rev = rev*10+reminder;
+   n=n/10;
+ }
+  System.out.println(rev);
+ }
+ catch(Exception e)
+  {
+    System.out.println("enter vaild integer");
+  }
+}
+}
